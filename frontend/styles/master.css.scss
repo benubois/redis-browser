@@ -1,0 +1,77 @@
+/*------------------------------------------------------------------------------
+ Structure
+------------------------------------------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body,
+html {
+	height: 100%;
+}
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Lucida Grande";
+	font-size: 13px;
+	width: 100%;
+	height: 100%;
+}
+body, a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.wrap {
+	-webkit-box-orient: horizontal;
+	display: -webkit-box;
+	-webkit-box-flex: 1;
+	height: 100%;
+}
+.keys {
+	width: 300px;
+	display: -webkit-box;
+	-webkit-box-flex: 0;
+	-webkit-box-ordinal-group: 1;
+	background: #dbe1e8;
+	ul {
+		overflow-y: scroll;
+		overflow-x: hidden;
+		list-style: none;
+		display: block;
+		width: 100%;
+	}
+	li a {
+		color: #000;
+		text-decoration: none;
+		display: block;
+		padding: 2px 6px;
+		white-space: nowrap; 
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+		&.selected {
+		    background:-webkit-linear-gradient(#d4dfed,#e6eefa);
+			border-color: #000 transparent #ccc transparent;
+		}
+	}
+}
+.data-wrap {
+	display: -webkit-box;
+	-webkit-box-flex: 1;
+	-webkit-box-ordinal-group: 2;	
+	border-left: 1px solid #bbbbbb;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 100%;
+}
+.data {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+}
+table {
+	width: 100%;
+}
+tbody tr:nth-child(odd) td { background-color:#f6f7f9; }
+td {
+	padding: 1px;
+}
