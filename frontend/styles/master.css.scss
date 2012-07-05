@@ -48,8 +48,9 @@ body, a {
 		border-top: 1px solid transparent;
 		border-bottom: 1px solid transparent;
 		&.selected {
-		    background:-webkit-linear-gradient(#d4dfed,#e6eefa);
-			border-color: #000 transparent #ccc transparent;
+		    background:-webkit-linear-gradient(#8ba0b3,#517088);
+			border-color: #7c91a5 transparent #446179 transparent;
+			color: #fff;
 		}
 	}
 }
