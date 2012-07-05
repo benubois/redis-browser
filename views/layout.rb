@@ -3,7 +3,7 @@ module RedisViewer
     class Layout < Mustache
       
       def title 
-        @title || "Redis Viewer"
+        @title || "Redis Browser"
       end
       
     end
