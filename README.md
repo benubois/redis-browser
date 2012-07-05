@@ -12,10 +12,10 @@ Installation
 
 1. Clone the repository
 
-    $ git clone https://github.com/benubois/redis-browser.git
+        $ git clone https://github.com/benubois/redis-browser.git
 
 2. Bundle install
 
-    $ cd redis-browser && bundle install
+        $ cd redis-browser && bundle install
 
 3. Run with your rack server of choice, I use pow.
