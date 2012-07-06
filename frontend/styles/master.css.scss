@@ -32,6 +32,7 @@ body, a {
 	-webkit-box-flex: 0;
 	-webkit-box-ordinal-group: 1;
 	background: #dbe1e8;
+	position: relative;
 	ul {
 		overflow-y: scroll;
 		overflow-x: hidden;
@@ -53,6 +54,15 @@ body, a {
 			color: #fff;
 		}
 	}
+}
+.ui-resizable-e {
+	height: 100%;
+	width: 5px;
+	position: absolute;
+	background-color: transparent;
+	right: -3px;
+	top: 0;
+	cursor: e-resize;
 }
 .data-wrap {
 	display: -webkit-box;

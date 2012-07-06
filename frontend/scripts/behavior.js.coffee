@@ -13,6 +13,8 @@ redisViewer.init =
       e.preventDefault()
   loadFirst: () ->
     $('.keys ul li:first-child a').click()
+  resize: () ->
+    $('.keys').resizable({ handles: "e" })
 
 $(document).ready () ->
   $.each(redisViewer.init, (i, item)->
