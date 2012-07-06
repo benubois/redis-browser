@@ -18,6 +18,7 @@ module RedisViewer
 
     get "/:key" do
       @key = params[:key]
+      @type = $redis.type(@key)
       mustache :show, :layout => false
     end
   

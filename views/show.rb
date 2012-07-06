@@ -2,10 +2,14 @@ module RedisViewer
   module Views
     class Show < Layout
       
+      def has_key
+        @type == 'hash'
+      end
+      
       def data
-        case $redis.type(@key)        
+        case @type
         when "string"
-          Array($redis[@key]).map{ |value| {'value' => value} }
+          [{'value' => $redis[@key]}]
         when "list"
           $redis.lrange(@key, 0, -1).map{ |value| {'value' => value} }
         when "set"

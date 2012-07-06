@@ -1,4 +1,12 @@
 <table>
+	<thead>
+		<tr>
+			{{#has_key}}
+			<th><span>Key</span></th>
+			{{/has_key}}
+			<th><span>Value</span></th>
+		</tr>
+	</thead>
 	<tbody>
 		{{#data}}
 		<tr>

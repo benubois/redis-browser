@@ -44,14 +44,26 @@ body, a {
 		color: #000;
 		text-decoration: none;
 		display: block;
-		padding: 2px 6px;
+		padding: 2px 6px 2px 60px;
 		white-space: nowrap; 
 		border-top: 1px solid transparent;
 		border-bottom: 1px solid transparent;
+		position: relative;
 		&.selected {
 		    background:-webkit-linear-gradient(#8ba0b3,#517088);
 			border-color: #7c91a5 transparent #446179 transparent;
 			color: #fff;
+			span {
+				color: #CCC;
+			}
+		}
+		span {
+			font-family: Consolas, Monaco, monospace;
+			color: #333;
+			width: 20px;
+			position: absolute;
+			left: 6px;
+			top: 4px;
 		}
 	}
 }
@@ -62,7 +74,7 @@ body, a {
 	background-color: transparent;
 	right: -3px;
 	top: 0;
-	cursor: e-resize;
+	cursor: col-resize;
 }
 .data-wrap {
 	display: -webkit-box;
@@ -81,8 +93,26 @@ body, a {
 }
 table {
 	width: 100%;
-}
-tbody tr:nth-child(odd) td { background-color:#f6f7f9; }
-td {
-	padding: 1px;
+	border-spacing:0;
+	border-collapse:collapse;
+	td {
+		padding: 1px;
+	}
+	th {
+		text-align: left;
+		color: #333;
+		padding: 2px 1px;
+	}
+	thead th {
+	    background:-webkit-linear-gradient(#edeeee,#e1e2e2);
+		border-bottom: 1px solid #bbbbbb;
+		span {
+			border-right: 1px solid #bbbbbb;
+			display: block;
+		}
+	}
+	tbody tr:nth-child(odd) td { 
+		background-color:#f6f7f9; 
+	}
+	
 }
