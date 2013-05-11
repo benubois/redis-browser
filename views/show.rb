@@ -3,7 +3,7 @@ module RedisViewer
     class Show < Layout
       
       def has_key
-        @type == 'hash'
+        @type == 'hash' || @type == 'zset'
       end
       
       def data
@@ -16,6 +16,8 @@ module RedisViewer
           $redis.smembers(@key).map{ |value| {'value' => value} }
         when "hash"
           $redis.hgetall(@key).map{ |key, value| {'key' => key, 'value' => value} }
+        when "zset"
+          $redis.zrange(@key, 0, -1, {withscores: true}).map{ |(value, key)| {'key' => key, 'value' => value} }
         else
           []
         end
