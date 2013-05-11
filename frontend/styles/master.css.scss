@@ -41,6 +41,7 @@ body {
 		display: block;
 		padding: 2px 6px 2px 60px;
 		white-space: nowrap; 
+		text-overflow: ellipsis;
 		border-top: 1px solid transparent;
 		border-bottom: 1px solid transparent;
 		position: relative;
