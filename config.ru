@@ -11,11 +11,13 @@ require 'sprockets'
 require 'coffee-script'
 require 'sass'
 require 'app'
+require "autoprefixer-rails"
 
 map '/assets' do
   environment = Sprockets::Environment.new
   environment.append_path 'frontend/scripts'
   environment.append_path 'frontend/styles'
+  AutoprefixerRails.install(environment)
   run environment
 end
 
