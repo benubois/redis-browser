@@ -5,7 +5,7 @@ A simple web-based viewer of data stored in redis.
 
 It looks like:
 
-![Redis Browser screenshot](https://dl.dropbox.com/u/16657547/redis_browser.png "Redis Browser")
+![Redis Browser screenshot](http://f.cl.ly/items/3r2r1H1U3a3F0N3e133D/Screen%20Shot%202015-01-06%20at%2011.34.29%20AM.png "Redis Browser")
 
 Installation
 ------------
