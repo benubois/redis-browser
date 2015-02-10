@@ -12,8 +12,6 @@ require 'coffee-script'
 require 'sass'
 require 'app'
 
-$redis = Redis.connect(:url => 'redis://127.0.0.1', :thread_safe => true)
-
 map '/assets' do
   environment = Sprockets::Environment.new
   environment.append_path 'frontend/scripts'
